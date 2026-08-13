@@ -1,0 +1,22 @@
+{
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "statement": "An API Consumer can send a GET request to /hello and receive a JSON response confirming the service is up and reachable",
+      "stories": [1],
+      "criteria": [
+        { "id": "AC-001-a", "must": "A GET request to /hello returns HTTP status 200", "method": "e2e" },
+        { "id": "AC-001-b", "must": "The response Content-Type is application/json", "method": "e2e" }
+      ]
+    },
+    {
+      "id": "REQ-002",
+      "statement": "The /hello response body is always exactly {\"message\":\"Hello, World!\"}",
+      "stories": [2],
+      "criteria": [
+        { "id": "AC-002-a", "must": "The response body is exactly {\"message\":\"Hello, World!\"}", "method": "e2e" },
+        { "id": "AC-002-b", "must": "Repeated GET requests to /hello return the same fixed body every time", "method": "e2e" }
+      ]
+    }
+  ]
+}

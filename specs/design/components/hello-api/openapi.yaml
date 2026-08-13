@@ -1,0 +1,28 @@
+openapi: 3.0.3
+info:
+  title: Hello API
+  version: 0.1.0
+  description: A minimal Go HTTP service exposing a single fixed greeting endpoint.
+servers:
+  - url: /
+paths:
+  /hello:
+    get:
+      operationId: getHello
+      summary: Get the fixed hello greeting
+      responses:
+        '200':
+          description: The greeting message
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Greeting'
+components:
+  schemas:
+    Greeting:
+      type: object
+      required: [message]
+      properties:
+        message:
+          type: string
+          description: The fixed greeting text

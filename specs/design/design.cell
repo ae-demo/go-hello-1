@@ -1,0 +1,7 @@
+title go-hello-1
+
+phase 1
+
+component hello-api as "Hello API" service [stories: 1, 2]
+
+north -> hello-api

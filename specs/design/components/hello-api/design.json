@@ -1,0 +1,20 @@
+{
+  "name": "hello-api",
+  "type": "service",
+  "version": "0.1.0",
+  "language": "Go",
+  "buildpack": "docker",
+  "appPath": "hello-api",
+  "entrypoint": "deployment/service",
+  "exposure": "internet",
+  "stories": [
+    1,
+    2
+  ],
+  "dependencies": [],
+  "description": "A minimal HTTP service implemented in Go using only the standard library's net/http package. It exposes a single GET /hello endpoint that always returns the fixed JSON body {\"message\":\"Hello, World!\"}. It has no database, no authentication, no external dependencies, and serves no other endpoints.",
+  "skillsPinned": [
+    "openapi-conventions",
+    "go"
+  ]
+}
