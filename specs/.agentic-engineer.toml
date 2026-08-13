@@ -1,0 +1,4 @@
+apiVersion = "agentic-engineer/v1"
+name = "go-hello-1"
+createdAt = "2026-08-13T11:59:05Z"
+idea = "A minimal hello-world HTTP API written in Go (golang). Exactly one HTTP service component, implemented in Go (golang) using only the Go standard library net/http package. It exposes a single endpoint, GET /hello, which returns the JSON body {\"message\":\"Hello, World!\"}. The implementation language MUST be Go (golang) - do not use Ballerina, Java, or any other language. No database, no authentication, no external dependencies, and no frontend."
