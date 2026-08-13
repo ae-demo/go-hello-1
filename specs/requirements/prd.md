@@ -25,10 +25,10 @@ one)*
 ## User Stories
 
 1. As an API Consumer, I want to send a GET request to `/hello`, so that I
- receive a JSON response confirming the service is up and reachable.
+receive a JSON response confirming the service is up and reachable.
 2. As an API Consumer, I want the response body to always be exactly
- `{"message":"Hello, World!"}`, so that I can reliably assert on it in
- automated checks.
+`{"message":"Hello, World!"}`, so that I can reliably assert on it in
+automated checks.
 
 ## Product Decisions
 
